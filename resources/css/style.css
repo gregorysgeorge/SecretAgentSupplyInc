@@ -162,10 +162,9 @@
 
 /* 1024PX ipad landscape*/
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
     body {
         font-size: 16px;
-        orientation: landscape;
     }
 
     .navbar-menu {
@@ -191,10 +190,7 @@
 
 /* 768PX ipad portrait*/
 
-@media only screen and (min-width: 471px) and (max-width: 768px) {
-    body {
-        orientation: portrait;
-    }
+@media only screen and (min-width: 471px) and (max-width: 768px)    {
 
     .navbar-menu {
         display: none;
@@ -217,11 +213,8 @@
         }
 }
 
-/* 470PX iphone landscape*/
-@media only screen and (min-width: 320px) and (max-width: 470px) {
-    .body {
-        orientation: landscape;
-    }
+/* 470PX iphone */
+@media only screen and (max-width: 470px) {
 
     .main-banner {
         height: 15rem;
@@ -229,7 +222,6 @@
 
     .headline {
         top: 9.5rem;
-        width: 100%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
@@ -282,10 +274,7 @@
 }
 
 /* 320PX iphone portrait*/
-media only screen and (max-width: 320px) and (max-width: 470px){
-    .body {
-        orientation: portrait;
-    }
+media only screen and (max-width: 470px){
 
     .main-banner {
         height: 15rem;
