@@ -10,8 +10,6 @@
 
     header {
         background-color: black;
-        min-width: 320px;
-        max-width: auto;
     }
 
         .company-name {
@@ -76,8 +74,10 @@
         }
 
     /*MAIN CONTENT*/
+    /*max e min width per responsive !!!*/
         .contents {
             max-width: 960px;
+            min-width: 320px;
             margin: 0 auto;
         }
 
@@ -143,10 +143,12 @@
 
     footer {
         background-color: black;
+        width: auto;
     }
 
         .footer {
-            width: 960px;
+            max-width: 960px;
+            min-width: 320px;
             padding: 5rem;
             margin: 4rem auto 0 auto;
             display: flex;
@@ -163,7 +165,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     body {
         font-size: 16px;
-        orientation: portrait;
+        orientation: landscape;
     }
 
     .navbar-menu {
@@ -217,17 +219,12 @@
 
 /* 470PX iphone landscape*/
 @media only screen and (min-width: 320px) and (max-width: 470px) {
-
     .body {
         orientation: landscape;
     }
 
     .main-banner {
         height: 15rem;
-    }
-
-    .banner {
-        width: 100%;
     }
 
     .headline {
@@ -285,10 +282,8 @@
 }
 
 /* 320PX iphone portrait*/
-@media only screen and (max-width: 320px) {
-
+media only screen and (max-width: 320px) and (max-width: 470px){
     .body {
-        width: 100vw;
         orientation: portrait;
     }
 
@@ -314,6 +309,7 @@
         .headline h1 {
             font-size: 1rem;
         }
+    
     
     .product {
         width: 90%;
