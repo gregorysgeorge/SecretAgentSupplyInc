@@ -4,6 +4,7 @@
         font-size: 18px;
         margin: 0 auto;
         background-color: white;
+        min-width: 470px;
     }
 
     /*HEADER*/
@@ -74,7 +75,7 @@
         }
 
     /*MAIN CONTENT*/
-    /*max e min width per responsive !!!*/
+                                /*max-min width responsive*/
         .contents {
             max-width: 960px;
             min-width: 320px;
@@ -147,8 +148,6 @@
     }
 
         .footer {
-            max-width: 960px;
-            min-width: 320px;
             padding: 5rem;
             margin: 4rem auto 0 auto;
             display: flex;
@@ -160,98 +159,86 @@
 
 /*MEDIA QUERY*/
 
-/* 1024PX ipad landscape*/
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+
+/* 1024PX */
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
     body {
         font-size: 16px;
     }
 
-    .navbar-menu {
-        display: none;
-    }
 
-    .menu-mobile span {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0.75rem 0;
-    }
+    /*Making the navigation display a "Menu" button instead of all the menu options*/
+        .navbar-menu {
+            display: none;
+        }
+
+            .menu-mobile span {
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0.75rem 0;
+            }
+
+    /*-----------------------------*/
+
 
     .product {
         width: 47%;
     }
 
-    #glasses {
-            display: none;
-        }
+    /* making only two products visible */
+
+        #glasses {
+                display: none;
+            }
+    /*----------------------------------*/
 }
 
-/* 768PX ipad portrait*/
-
-@media only screen and (min-width: 471px) and (max-width: 768px)    {
-
-    .navbar-menu {
-        display: none;
-    }
-
-    .menu-mobile span {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0.75rem 0;
-    }
-
-    .product {
-        width: 47%;
-    }
-
-    #glasses {
-            display: none;
-        }
-}
-
-/* 470PX iphone */
+/* 470PX */
 @media only screen and (max-width: 470px) {
 
     .main-banner {
         height: 15rem;
     }
 
-    .headline {
-        top: 9.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-        .headline h4 {
-            font-size: 0.77rem;
+        .headline {
+            top: 9.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
 
-        .headline h1 {
-            font-size: 1rem;
-        }
+            .headline h4 {
+                font-size: 0.77rem;
+            }
+
+            .headline h1 {
+                font-size: 1rem;
+            }
     
+    /*Making the navigation display a "Menu" button instead of all the menu options*/
     .navbar-menu {
         display: none;
     }
     
-    .menu-mobile span {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0.75rem 0;
-        }
-    
+        .menu-mobile span {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0.75rem 0;
+            }
+    /*-----------------------------*/
+
     .product {
         width: 90%;
         text-align: center;
         margin: 0 auto;
     }
-        
+    
+    /* making only one product visible */
         #watch {
             display: none;
         }
@@ -259,6 +246,7 @@
         #glasses {
             display: none;
         }
+    /*---------------------------------*/
     
     .other-info {
         flex-wrap: wrap;
@@ -272,59 +260,3 @@
         text-align: center;
     }
 }
-
-/* 320PX iphone portrait*/
-media only screen and (max-width: 470px){
-
-    .main-banner {
-        height: 15rem;
-    }
-
-    .banner {
-        width: 100%;
-    }
-
-    .headline {
-        top: 9.5rem;
-        width: 100%;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-        .headline h4 {
-            font-size: 0.77rem;
-        }
-
-        .headline h1 {
-            font-size: 1rem;
-        }
-    
-    
-    .product {
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-    }
-        
-        #watch {
-            display: none;
-        }
-
-        #glasses {
-            display: none;
-        }
-    
-    .other-info {
-        flex-wrap: wrap;
-    }
-        .location-hours {
-            width: 90%;
-            margin: 0.5em auto;
-        }
-    
-    footer {
-        text-align: center;
-    }
-}
-
-
